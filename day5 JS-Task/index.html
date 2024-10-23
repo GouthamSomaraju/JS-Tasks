@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS String Methods</title>
+  <script src="./day5 JS Task.js"></script>
+  <style>
+      body{
+    color: #fff;
+    background-color: black
+  }
+
+  .js{
+    display: flex;
+    justify-content: center;
+  }
+.js-logo {
+    width: 150px;
+    height: 150px;
+    background-color: #f7df1e;
+    color: #323330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .js-text {
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container{
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    .container h1, h3{
+      text-align: center;
+    }
+
+    .link{
+      display: flex;
+      justify-content: center;
+    }
+    .link a{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 15px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #323330;
+      text-decoration: none;
+    }
+    .link a:hover{
+        transform: scale(1.5);
+    }
+
+    .ques{
+      display: flex;
+    justify-content: center;
+    }
+    .ques ol{
+      font-size: 20px;
+    }
+    li{
+        list-style: none;
+    }
+    .question{
+      color: #569ccb;
+    }
+    .var{
+      color: #dcdcaa;
+    }
+    .variable{
+      color: #9cdcfe;
+    }
+    .nums, .str, .quotes{
+      color: #ce9172 ;
+    }
+    .for{
+      color: #fff;
+    }
+    .console{
+      color: #9cdcfe;
+    }
+    .log, .method{
+      color: #dcdcaa;
+    }
+    .cmt{
+      color: #6a9955;
+    }
+    .bracket{
+      color: #da70b3;
+    }
+    .num{
+      color: #b5ce89;
+    }
+  </style>
+</head>
+<body>
+  <div class="js">
+    <div class="js-logo">
+      <span class="js-text">JS</span>
+  </div>
+  </div>
+  <div class="container">
+    
+  <h1>Javascript </h1>
+  <h3>Check Console for Output</h3>
+  <div class="link">
+  <a href="https://docs.google.com/document/d/1qt9I3eOwI0r2VXju6n1x9wumJVjLlI3ktf_EWnK63Jc/edit?usp=sharing"><b>For Explanation ClickHere</b></a>
+  </div>
+  <div class="ques">
+
+    <ol>
+      <!-- 1 -->
+      <li><pre>
+        <span class="question">Write a code to get like below using</span><br>
+        <span class="question">join method:</span><br>
+    
+        <span class="question"><span class="nums">1.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">fruits</span>=[<span class="question">'Apple'</span>,<span class="question">'Banana'</span>,<span class="question">'Orange'</span>];
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"Apple, Banana, Orange"</span>
+
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">fruits</span>=[<span class="str">'Apple'</span>,<span class="str">'Banana'</span>,<span class="str">'Orange'</span>];
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">fruits</span>.<span class="method">join</span><span class="bracket">()</span>); <span class="cmt">//output-- "Apple, Banana, Orange"</span>
+        
+    </pre></li>
+
+      <!-- 2 -->
+      <li><pre>
+        <span class="question"><span class="nums">2.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">numbers</span>=[<span class="nums">1</span>,<span class="nums">2</span>,<span class="nums">3</span>,<span class="nums">4</span>,<span class="nums">5</span>];
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"1-2-3-4-5"</span>
+
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">numbers</span>=[<span class="num">1</span>,<span class="num">2</span>,<span class="num">3</span>,<span class="num">4</span>,<span class="num">5</span>];
+              <span class="console">console</span>.<span class="log">log</span>(<span class="variable">numbers</span>.<span class="method">join</span><span class="bracket">(<span class="quotes">"-"</span>)</span>); <span class="cmt">//output-- "1-2-3-4-5"</span>
+        
+    </pre></li>
+
+
+      <!-- 3 -->
+      <li><pre>
+        <span class="question"><span class="nums">3.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">chars</span>=<span class="str">'H'</span>,<span class="nums">'e'</span>,<span class="nums">'l'</span>,<span class="nums">'l'</span>,<span class="nums">'o'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"Hello"</span>
+  
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">chars</span>=<span class="str">'H'</span>,<span class="nums">'e'</span>,<span class="nums">'l'</span>,<span class="nums">'l'</span>,<span class="nums">'o'</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">chars</span>.<span class="method">join</span><span class="bracket">(<span class="quotes">""</span>)</span>); <span class="cmt">//output-- "Hello"</span>
+        
+    </pre></li>
+
+
+        <!-- 4 -->
+      <li><pre>
+        <span class="question">slice method:</span><br>
+        <span class="question"><span class="nums">4.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">text</span>=<span class="str">'JavaScript is awesome'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"JavaScript"</span>
+      
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">text</span>=<span class="str">'JavaScript is awesome'</span>;
+                <span class="console">console</span>.<span class="log">log</span>(<span class="variable">text</span>.<span class="method">slice</span><span class="bracket">(<span class="num">0,10</span>)</span>); <span class="cmt">//output-- "Javascript"</span>
+            
+        </pre></li>
+
+
+      <!-- 5 -->
+      <li><pre>
+        <span class="question"><span class="nums">5.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">sentence</span>=<span class="str">'I Love Learning Javascript'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"Learning"</span>
+        
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">sentence</span>=<span class="str">"I Love Learning Javascript"</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">sentence</span>.<span class="method">slice</span><span class="bracket">(<span class="num">7,15</span>)</span>); <span class="cmt">//output-- "Learning"</span>
+              
+        </pre></li>
+
+
+      <!-- 6 -->
+      <li><pre>
+        <span class="question"><span class="nums">6.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">text</span>=<span class="str">'Frontend Development'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">"Development"</span>
+        
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">text</span>=<span class="str">"Frontend Development"</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">text</span>.<span class="method">slice</span><span class="bracket">(<span class="num">-11</span>)</span>); <span class="cmt">//output-- "Development"</span>
+              
+        </pre></li>
+
+      <!-- 7 -->
+      <li><pre>
+        <span class="question">Split method:</span><br>
+        <span class="question"><span class="nums">7.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">date</span>=<span class="str">'2024-10-21'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">[ '2024', '10', '21' ]</span>
+        
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">date</span>=<span class="str">"2024-10-21"</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">date</span>.<span class="method">split</span><span class="bracket">(<span class="quotes">"-"</span>)</span>); <span class="cmt">//output-- [ '2024', '10', '21' ]</span>
+              
+        </pre></li>
+
+
+      <!-- 8 -->
+      <li><pre>
+        <span class="question"><span class="nums">8.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">text</span>=<span class="str">'I Love JavaScript programming'</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">[ 'I', 'Love' ]</span>
+        
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">text</span>=<span class="str">"I Love JavaScript programming"</span>;
+              </span> <span class="var">var</span> <span class="variable">x</span>=<span class="variable">text</span>.<span class="method">split</span><span class="bracet">(<span class="quotes">" "</span>)</span>;
+              </span> <span class="var">var</span> <span class="variable">y</span>=<span class="variable">x</span>.<span class="method">slice</span><span class="bracet">(<span class="num">0,2</span>)</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">y</span>); <span class="cmt">//output-- [ 'I', 'Love' ]</span>
+              
+        </pre></li>
+
+      <!-- 9 -->
+      <li><pre>
+        <span class="question"><span class="nums">9.i</span><span class="for">/</span>p</span>: <span class="var">var</span> <span class="question">url</span>=<span class="str">"https://www.example.com/path/page.html"</span>;
+          <span class="question">o</span>/<span class="question">p</span>: <span class="question">[ 'https:', '', 'www.example.com', 'path', 'page.html' ]</span>
+        
+          <span class="ans">Ans:</span> <span class="var">var</span> <span class="variable">url</span>=<span class="str">"https://www.example.com/path/page.html"</span>;
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">url</span>.<span class="method">split</span><span class="bracket">(<span class="quotes">"/"</span>)</span>); <span class="cmt">//output-- [ 'https:', '', 'www.example.com', 'path', 'page.html' ]</span>
+              
+        </pre></li>
+
+    </ol>
+  
+</body>
+</html>

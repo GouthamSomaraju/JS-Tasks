@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS task</title>
+  <script src="./day4 Task.js"></script>
+ <style>
+  body{
+    color: #fff;
+    background-color: black
+  }
+
+  .js{
+    display: flex;
+    justify-content: center;
+  }
+.js-logo {
+    width: 150px;
+    height: 150px;
+    background-color: #f7df1e;
+    color: #323330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.js-text {
+    font-family: 'Arial', sans-serif;
+}
+
+    .container{
+      /* color: #fff; */
+      /* background-color: black; */
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    .container h1, h3{
+      text-align: center;
+    }
+
+    .link{
+      display: flex;
+      justify-content: center;
+    }
+    .link a{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 15px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #323330;
+      text-decoration: none;
+    }
+    .link a:hover{
+        transform: scale(1.5);
+    }
+
+    .ques{
+      display: flex;
+    justify-content: center;
+    }
+    .ques ol{
+      font-size: 20px;
+    }
+    li{
+        list-style: none;
+    }
+    .variable, .questions{
+        color: #9cdcfe;
+    }
+    .question, .example, .ans{
+        color: #569ccb;
+    }
+    
+    .let{
+        color: #569ccb;
+    }
+    .value, .numexam, .numsexam, .quotes{
+      color: #ce9172 ;
+    }
+    
+    .console{
+      color: #9cdcfe;
+    }
+    .log{
+      color: #dcdcaa;
+    }
+    .num{
+      color: #b5ce89;
+    }
+    .method{
+        color: #dcdcaa;
+    }
+    .cmt{
+      color: #6a9955;
+    }
+ </style>
+</head>
+<body>
+  <div class="js">
+    <div class="js-logo">
+      <span class="js-text">JS</span>
+  </div>
+  </div>
+  <div class="container">
+    
+  <h1>Javascript </h1>
+  <h3>Check Console for Output</h3>
+  <div class="link">
+  <a href="https://docs.google.com/document/d/1E1suyRYcux36if_TFduVbWhTB6XFVhijP3hx97Zif00/edit?usp=sharing"><b>For Explanation ClickHere</b></a>
+  </div>
+  <div class="ques">
+  <ol>
+
+      <!-- 1 -->
+    <li><pre>
+        <span class="question">1.Write a JavaScript code to add an element to the end of an array using the Push method.</span>
+          <span class="example">Example:</span> [<span class="numexam">1,2,3</span>] -> [<span class="numexam">1, 2, 3, 4</span>]
+
+          <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">arr1</span>=[<span class="num">1,2,3</span>];
+               <span class="variable">arr1</span>.<span class="method">push</span>(<span class="num">4</span>);
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">arr1</span>); <span class="cmt">//output-- [ 1, 2, 3, 4 ]</span>
+        
+    </pre></li>
+
+
+      <!-- 2 -->
+    <li><pre>
+        <span class="question">2.Write a JavaScript code to remove the last element from an array using the Pop method.</span>
+          <span class="example">Example:</span> [<span class="numexam">1,2,3,4</span>] -> [<span class="numexam"> 1, 2, 3 </span>]
+
+          <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">arr2</span>=[<span class="num">1,2,3,4</span>];
+               <span class="variable">arr2</span>.<span class="method">pop</span>(<span class="num"></span>);
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">arr2</span>); <span class="cmt">//output-- [ 1, 2, 3 ]</span>
+        
+    </pre></li>
+
+
+
+     <!-- 3 -->
+     <li><pre>
+        <span class="question">3.Write a JavaScript code to add an element to the beginning of an array using the Unshift method.</span>
+          <span class="example">Example:</span> [<span class="numexam">2,3,4</span>] -> [<span class="numexam"> 1, 2, 3, 4 </span>]
+
+          <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">arr3</span>=[<span class="num">2,3,4</span>];
+               <span class="variable">arr3</span>.<span class="method">unshift</span>(<span class="num">1</span>);
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">arr3</span>); <span class="cmt">//output-- [ 1, 2, 3, 4 ]</span>
+        
+    </pre></li>
+    
+
+    
+    <!-- 4 -->
+    <li><pre>
+        <span class="question">4.Write a JavaScript code to remove the first element from an array using the Shift method.</span>
+          <span class="example">Example:</span> [<span class="numexam">1,2,3,4</span>] -> [<span class="numexam"> 2, 3, 4 </span>]
+
+          <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">arr4</span>=[<span class="num">1,2,3,4</span>];
+               <span class="variable">arr3</span>.<span class="method">shift</span>();
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">arr4</span>); <span class="cmt">//output-- [ 2, 3, 4 ]</span>
+        
+    </pre></li>
+
+
+    <!-- 5 -->
+    <li><pre>
+        <span class="question">5.Write a JavaScript code to convert an array into a string using the Join method.</span>
+          <span class="example">Example:</span> [<span class="numexam">1,2,3</span>] -> [<span class="numexam">"123</span>]
+
+          <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">arr5</span>=[<span class="num">1,2,3,4</span>];
+               <span class="let">var</span> <span class="variable">arr5</span>=<span class="variable">arr3</span>.<span class="method">join</span>(<span class="quotes">''</span>);
+               <span class="console">console</span>.<span class="log">log</span>(<span class="variable">arr4</span>); <span class="cmt">//output-- [ 2, 3, 4 ]</span>
+        
+    </pre></li>
+
+    <!-- ------Choose Correct ans--------->
+
+    <h3>Choose the Correct Answe</h3><br>
+
+
+    <!-- // 1. What will be the output of [1,2,3,4].pop() ? Ans[B]
+
+// A) [1, 2, 3, 4]
+// B) [1, 2, 3]
+// C) [2, 3, 4]
+// D) Error -->
+
+ <!-- 1 -->
+ <li><pre>
+       <span class="questions"><span class="numsexam">1.</span> What will be the output of </span>[<span class="numsexam">1, 2, 3, 4</span>].<span class="method">pop</span>() ?  <span class="questions">Ans:</span>[<span class="numsexam">B</span>]
+       
+       (<span class="questions">A</span>) [<span class="numsexam">1, 2, 3, 4</span>]
+       (<span class="questions">B</span>) [<span class="numsexam">1, 2, 3</span>]
+       (<span class="questions">C</span>) [<span class="numsexam">2, 3, 4</span>]
+       (<span class="questions">D</span>) <span class="questions">Error</span>
+
+      <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">ar1</span>=[<span class="num">1,2,3,4</span>];
+           <span class="variable">ar1</span>.<span class="method">pop</span>();
+           <span class="console">console</span>.<span class="log">log</span>(<span class="variable">ar1</span>); <span class="cmt">//output-- [ 1, 2, 3 ]</span>
+    
+</pre></li>
+
+
+
+    <!-- 2 -->
+    <li><pre>
+      <span class="questions"><span class="numsexam">2.</span> What will be the output of </span>[<span class="numsexam">1, 2, 3</span>].<span class="method">push</span>(<span class="numsexam">4</span>) ?  <span class="questions">Ans:</span>[<span class="numsexam">B</span>]
+      
+      (<span class="questions">A</span>) [<span class="numsexam">1, 2, 3</span>]
+      (<span class="questions">B</span>) [<span class="numsexam">1, 2, 3, 4</span>]
+      (<span class="questions">C</span>) [<span class="numsexam">4, 1, 2, 3</span>]
+      (<span class="questions">D</span>) <span class="questions">Error</span>
+
+    <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">ar2</span>=[<span class="num">1,2,3</span>];
+          <span class="variable">ar2</span>.<span class="method">push</span>(<span class="num">4</span>);
+          <span class="console">console</span>.<span class="log">log</span>(<span class="variable">ar2</span>); <span class="cmt">//output-- [1, 2, 3, 4 ]</span>
+
+    </pre></li>
+
+    <!-- 3 -->
+    <li><pre>
+      <span class="questions"><span class="numsexam">3.</span> What will be the output of </span>[<span class="numsexam">1, 2, 3, 4</span>].<span class="method">shift</span>() ?  <span class="questions">Ans:</span>[<span class="numsexam">B</span>]
+      
+      (<span class="questions">A</span>) [<span class="numsexam">1, 2, 3, 4</span>]
+      (<span class="questions">B</span>) [<span class="numsexam">2, 3, 4</span>]
+      (<span class="questions">C</span>) [<span class="numsexam">1, 2, 3</span>]
+      (<span class="questions">D</span>) <span class="questions">Error</span>
+
+    <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">ar3</span>=[<span class="num">1,2,3,4</span>];
+          <span class="variable">ar3</span>.<span class="method">shift</span>();
+          <span class="console">console</span>.<span class="log">log</span>(<span class="variable">ar3</span>); <span class="cmt">//output-- [ 2, 3, 4 ]</span>
+
+    </pre></li>
+
+
+    <!-- 4 -->
+    <li><pre>
+      <span class="questions"><span class="numsexam">4.</span> What will be the output of </span>[<span class="numsexam">2, 3, 4</span>].<span class="method">unshift</span>() ?  <span class="questions">Ans:</span>[<span class="numsexam">B</span>]
+      
+      (<span class="questions">A</span>) [<span class="numsexam">2, 3, 4</span>]
+      (<span class="questions">B</span>) [<span class="numsexam">1, 2, 3, 4</span>]
+      (<span class="questions">C</span>) [<span class="numsexam">1, 3, 4</span>]
+      (<span class="questions">D</span>) <span class="questions">Error</span>
+
+    <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">ar4</span>=[<span class="num">2,3,4</span>];
+          <span class="variable">ar4</span>.<span class="method">unshift</span>(<span class="num">1</span>);
+          <span class="console">console</span>.<span class="log">log</span>(<span class="variable">ar4</span>); <span class="cmt">//output-- [1, 2, 3, 4 ]</span>
+
+    </pre></li>
+
+
+    <!-- 5 -->
+    <li><pre>
+      <span class="questions"><span class="numsexam">5.</span> What will be the output of </span>[<span class="numsexam">1, 2, 3</span>].<span class="method">join</span>(<span class="quotes">""</span>) ?  <span class="questions">Ans:</span>[<span class="numsexam">A</span>]
+      
+      (<span class="questions">A</span>) [<span class="numsexam">123</span>]
+      (<span class="questions">B</span>) [<span class="numsexam">1, 2, 3</span>]
+      (<span class="questions">C</span>) [<span class="numsexam">1 2 3</span>]
+      (<span class="questions">D</span>) <span class="questions">Error</span>
+
+    <span class="ans">Ans:</span> <span class="let">var</span> <span class="variable">ar5</span>=[<span class="num">1,2,3</span>];
+          <span class="let">var</span> <span class="variable">x1</span>=<span class="variable">ar5</span>.<span class="method">join</span>(<span class="quotes">""</span>);
+          <span class="console">console</span>.<span class="log">log</span>(<span class="variable">x1</span>); <span class="cmt">//output-- "123"</span>
+
+    </pre></li>
+</ol>
+</div>
+
+</div>
+</body>
+</html>

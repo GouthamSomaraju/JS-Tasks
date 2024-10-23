@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS task</title>
+  <script src="./day3 Task.js"></script>
+ <style>
+  body{
+    color: #fff;
+    background-color: black
+  }
+
+  .js{
+    display: flex;
+    justify-content: center;
+  }
+.js-logo {
+    width: 150px;
+    height: 150px;
+    background-color: #f7df1e;
+    color: #323330;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.js-text {
+    font-family: 'Arial', sans-serif;
+}
+
+    .container{
+      /* color: #fff; */
+      /* background-color: black; */
+      margin-left: 10vw;
+      margin-right: 10vw;
+    }
+    .container h1, h3{
+      text-align: center;
+    }
+
+    .link{
+      display: flex;
+      justify-content: center;
+    }
+    .link a{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 15px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: #323330;
+      text-decoration: none;
+    }
+    .link a:hover{
+        transform: scale(1.5);
+    }
+    .ques{
+      display: flex;
+    justify-content: center;
+    }
+    .ques ol{
+      font-size: 20px;
+    }
+    .variable{
+        color: #9cdcfe;
+    }
+    .let{
+        color: #569ccb;
+    }
+    .value{
+      color: #ce9172 ;
+    }
+    .propname{
+      color: #9cdcfe ;
+    }
+    .propvalue{
+      color: #ce9172 ;
+    }
+    .console{
+      color: #9cdcfe;
+    }
+    .log{
+      color: #dcdcaa;
+    }
+    .num{
+      color: #b5ce89;
+    }
+    .cmt{
+      color: #6a9955;
+    }
+ </style>
+</head>
+<body>
+  <div class="js">
+    <div class="js-logo">
+      <span class="js-text">JS</span>
+  </div>
+  </div>
+  <div class="container">
+    
+  <h1>Javascript </h1>
+  <h3>Check Console for Output</h3>
+  <div class="link">
+  <a href="https://docs.google.com/document/d/1LZgjz2t1pFC3kAHTfWEs0aUg3VQQOttYw7pktYP3wHQ/edit?usp=sharing"><b>For Explanation ClickHere</b></a>
+  </div>
+  <div class="ques">
+  <ol>
+
+    <!-- 1 -->
+    <li> What will be the output of this code given below? Explain them?</li>
+    <pre>
+        <span class="let">let</span> <span class="variable">x</span>=<span class="num">5</span>;
+        <span class="let">let</span> <span class="variable">y</span>=<span class="variable">x</span>;
+        <span class="variable">x</span>=<span class="num">10</span>;
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">x</span>); <span class="cmt">// output-- 10</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">y</span>); <span class="cmt">// output-- 5</span>
+    </pre>
+
+    <!-- 2 -->
+    <li>What will be the output of this code given below? Explain them?</li>
+    <pre>
+        <span class="let">let</span> <span class="variable">obj1</span>={ <span class="variable">name</span>:<span class="value">"Alice"</span>};
+        <span class="let">let</span> <span class="variable">obj2</span>=<span class="variable">obj1</span>;
+        <span class="variable">obj1.name</span>=<span class="value">"Bob"</span>;
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">obj1.name</span>); <span class="cmt">// output-- Bob</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">obj2.name</span>); <span class="cmt">// output-- Bob</span>
+    </pre>
+
+    <!-- 3 -->
+    <li> <pre>
+        <span class="let">let</span> <span class="variable">a</span>=<span class="value">"hello" </span>;
+        <span class="let">let</span> <span class="variable">b</span>=<span class="num">42</span>;
+        <span class="let">let</span> <span class="variable">c</span>=<span class="let">true</span>;
+        <span class="let">let</span> <span class="variable">d</span>={<span class="propname">key</span>:<span class="propvalue">"value"</span>};
+        <span class="let">let</span> <span class="variable">e</span>=<span class="let">null</span> ; 
+        <span class="let">let</span> <span class="variable">f</span>=<span class="let">undefined</span>;
+    
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">a</span>); <span class="cmt">// output-- string</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">b</span>); <span class="cmt">// output-- number</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">c</span>); <span class="cmt">// output-- Boolean</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">d</span>); <span class="cmt">// output-- object</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">e</span>); <span class="cmt">// output-- object</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="let">typeof</span> <span class="variable">f</span>); <span class="cmt">// output-- undefined</span>
+    </pre></li>
+    
+<!-- 4 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">numbers</span>=[<span class="num">10,20,30,40,50</span>];
+
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">numbers</span>[<span class="num">2</span>]); <span class="cmt">// output-- 30</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">numbers</span>[<span class="num">0</span>]); <span class="cmt">// output-- 10</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">numbers</span>[<span class="variable">numbers</span>.<span class="variable">length</span>-<span class="num">1</span>]); <span class="cmt">// output-- 50</span>
+    </pre></li>
+    
+<!-- 5 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">fruits</span>=[<span class="value">"apple"</span>, <span class="value">"banana"</span>, <span class="value">"mango"</span>];
+        <span class="variable">fruits</span>[<span class="num">1</span>]=<span class="value">"orange"</span>;
+    
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">fruits</span>); <span class="cmt">// output-- ['apple', 'orange', 'mango'"]</span>
+    </pre></li>
+    
+
+    <!-- 6 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">matrix</span>=[
+            [<span class="num">1,2,3</span>],
+            [<span class="num">4,5,6</span>],
+            [<span class="num">7,8,9</span>]
+        ];
+
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">matrix</span>[<span class="num">1</span>][<span class="num">2</span>]); <span class="cmt">// output-- 6</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">matrix</span>[<span class="num">2</span>][<span class="num">0</span>]); <span class="cmt">// output-- 7</span>
+    </pre></li>
+    
+    <!-- 7 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">person</span>={
+          <span class="propname">name</span>:<span class="propvalue">"Jhon"</span>,
+          <span class="propname">age</span>:<span class="num">25</span>,
+          <span class="propname">agecity</span>:<span class="propvalue">"New York"</span>
+        };
+
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">person</span>.<span class="propname">name</span>); <span class="cmt">//output-- Jhon</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">person</span>.<span class="propname">age</span>);  <span class="cmt">//output-- 25</span>
+    </pre></li>
+    
+    <!-- 8 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">car</span>={
+          <span class="propname">make</span>:<span class="propvalue">"Toyota"</span>,
+          <span class="propname">model</span>:<span class="propvalue">"Corolla"</span>,
+          <span class="propname">year</span>:<span class="num">2021</span>
+        };
+
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">car</span>[<span class="propvalue">"make"</span>]); <span class="cmt">//output-- Toyota</span>
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">car</span>[<span class="propvalue">"model"</span>]); <span class="cmt">//output-- Corolla</span>
+    </pre></li>
+    
+    <!-- 9 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">book</span> ={
+          <span class="propname">title</span>:<span class="propvalue">"The Great Gatsby"</span>,
+          <span class="propname">author</span>:<span class="propvalue">"F.Scott Fitzgerald"</span>
+        };
+
+        <span class="variable">book</span>.<span class="propname">author</span>=<span class="propvalue">"Anonymous"</span>;
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">book</span>.<span class="propname">author</span>); <span class="cmt">//output-- Anonymous</span>
+    </pre></li>
+
+    <!-- 10 -->
+    <li><pre>
+        <span class="let">let</span> <span class="variable">student</span>={
+          <span class="propname">name</span>:<span class="propvalue">"Alice"</span>,
+          <span class="propname">grade</span>:<span class="propvalue">"A"</span>
+        };
+
+        <span class="variable">student</span>.<span class="propname">age</span>=<span class="num">20</span>;
+        <span class="console">console</span>.<span class="log">log</span>(<span class="variable">student</span>); <span class="cmt">//output-- {name:'Alice', grade:'A', age:20}</span>
+      </pre></li>
+    
+
+  </ol>
+</div>
+
+</div>
+</body>
+</html>
