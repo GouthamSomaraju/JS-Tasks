@@ -1,4 +1,7 @@
 // 1.Check if a Number is Even or odd
+// Write a JavaScript program that prompts the user to enter a number and alerts
+//  "Even if the number is even, or "Odd if the number is odd. 
+// Use the modulus operator to check if the number is divisible by 2.
 
 var number=prompt("enter the number")
         if(number%2==0){
