@@ -9,6 +9,7 @@ function number(x){
     }
 }
 number(6)
+// output: 6 is even number
 
 // ------------------------------------------------------------------------------------------------------------
 
@@ -28,6 +29,7 @@ function str(a){
  }
 }
 str("mom")
+// output: Palindrome
 
 // -------------------------------------------------------------------------------------------------------------------
 
@@ -39,10 +41,11 @@ function nums(a,b,c){
         console.log(`a = ${a} is greater number than b, c `)
     }
     if(b>c && b>a){
-        console.log(`b = ${b} is greater number c, a`)
+        console.log(`b = ${b} is greater number than c, a`)
     }
     if(c>a && c>b){
-        console.log(`c = ${c} is greater number a, b`)
+        console.log(`c = ${c} is greater number than a, b`)
     }
 }
 nums(1,3,9);
+// output: c = 9 is greater number a, b
