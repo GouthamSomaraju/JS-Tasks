@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img src="#" id="img" alt="">
+    <p id=""></p>
+    <h1 class="c1" id="id1">hello</h1>
+    <h1 class="c1">welcome</h1>
+    <h1 class="c2">something</h1>
+    <div>
+        <p class="=p1">paragraph</p>
+    </div> -->
+    <div id="mydiv">
+        <img id="myimg" >
+        <p id="myname"></p>
+        <p id="designation"></p>
+        <p id="id"></p>
+        <p id="institute"></p>
+
+
+    </div>
+
+    <script>
+        // Div
+        let div=document.getElementById("mydiv")
+        div.style.border="1px solid black"
+        div.style.background="url(./Assets/images/id.jpeg)"
+        div.style.backgroundSize = 'cover';  // Makes the background image cover the entire div
+        div.style.backgroundPosition = 'center'
+        div.style.borderRadius="10px"
+        div.style.width="300px"
+        div.style.height="400px"
+        div.style.marginRight="auto"
+        div.style.marginLeft="auto"
+        // div.style.backgroundColor="yellow"
+        // img
+        let img=document.getElementById("myimg")
+        img.setAttribute("src","./Assets/images/Goutham.jpg")
+        img.setAttribute("height","100px")
+        img.style.border="1px solid"
+        img.style.padding="px"
+        img.style.marginTop="25px"
+        img.style.marginRight="50px"
+        img.style.marginLeft="95px"
+        img.style.borderRadius="50%"
+
+        //name
+        let name=document.getElementById("myname")
+        name.style.paddingTop = '0px'
+        name.style.paddingBottom = '0px'
+        name.innerHTML="<b>GOUTHAM</b>"
+        name.style.textAlign = 'center';
+        name.style.fontSize="23px"
+        name.style.fontFamily = 'Arial, sans-serif'
+
+
+        // designation
+        let role=document.getElementById("designation")
+        role.innerHTML="<b>Designer</b>"
+        role.style.textAlign = 'center';
+        role.style.fontSize="20px"
+        div.style.fontFamily = '"Roboto", sans-serif'
+
+
+        // ID
+        let id=document.getElementById("id")
+        id.innerHTML="<b>ID:</b>1234"
+        id.style.textAlign = 'center';
+        id.style.fontSize="12px"
+
+        
+        // institute
+        let institute=document.getElementById("institute")
+        institute.innerHTML="<b>10000CODERS</b>"
+        institute.style.textAlign = 'center';
+        institute.style.fontSize="20px"
+
+</script>
+</body>
+</html>
