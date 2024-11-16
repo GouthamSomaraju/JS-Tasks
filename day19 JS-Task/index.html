@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <script>
+        
+        let div1=document.createElement("div")
+        div1.style.width="300px"
+        div1.style.height="300px"
+        div1.style.border="5px solid #87AFC7"
+        div1.style.background="#3B9C9C"
+        div1.style.marginLeft="auto"
+        div1.style.marginRight="auto"
+        document.body.append(div1)
+
+        let img=document.createElement("img")
+        img.setAttribute("src","./Assets/images/king.jfif")
+        
+        img.style.width="100px"
+        img.style.marginLeft="90px"
+        img.style.marginRight="100px"
+        img.style.marginTop="70px"
+        div1.append(img)
+
+        let name=document.createElement("h1")
+        name.innerHTML="Prabhas"
+        name.style.textAlign="center"
+        div1.append(name)
+        
+
+        
+
+        window.onload=function () {
+            
+        
+        var buttonContainer = document.getElementById('button-container');
+         buttonContainer.style.gap="10px"
+         buttonContainer.style.width="300px"
+         buttonContainer.style.margin="10px"
+         buttonContainer.style.marginLeft="auto"
+         buttonContainer.style.marginRight="auto"
+         buttonContainer.style.padding="10px"
+        //  buttonContainer.style.border="2px solid black"
+         buttonContainer.style.display = 'flex';
+         buttonContainer.style.justifyContent = 'center';  // Center buttons horizontally
+         buttonContainer.style.alignItems = 'center';
+
+        }
+
+        var btn1=document.getElementById("btn1")
+        btn1.style.border="red"
+
+        function Kalki() {
+            div1.style.borderColor="#808080"
+            div1.style.background="#4C7766"
+            name.innerHTML="Kalki"
+            name.style.color="#FBF0F4"
+            img.setAttribute("src","./Assets/images/kalki.jfif")
+            img.style.width="120px"
+
+    
+        }
+        function Salaar() {
+            div1.style.borderColor="yellow"
+            div1.style.background="black"
+            name.innerHTML="Salaar"
+            name.style.color="yellow"
+            img.setAttribute("src","./Assets/images/salaar.jpg")
+    
+        }
+        function RajaSaab() {
+            div1.style.borderColor="#e5be71"
+            div1.style.background="#351c17"
+            name.innerHTML="RajaSaab"
+            name.style.color="white"
+            img.setAttribute("src","./Assets/images/ANI-20241021114625.jpeg")
+            img.style.marginTop="50px"
+            img.style.marginLeft="92px"
+
+
+    
+        }
+
+    </script>
+    <div id="button-container" >
+    <button onclick="Kalki()" id="btn" style="background-color:#4C7766;border:#808080;color: aliceblue;padding:10px;border-radius: 20px;">Kalki</button>
+    <button onclick="Salaar()" class="btn" style="background-color:#808080 ;border:#4C7766;color: aliceblue;padding:10px;border-radius: 20px;">Salaar</button>
+    <button onclick="RajaSaab()" class="btn" style="background-color:#3B9C9C;border:#808080;color: aliceblue;padding:10px;border-radius: 20px;">RajaSaab</button>
+
+    </div>
+
+</body>
+</html>
