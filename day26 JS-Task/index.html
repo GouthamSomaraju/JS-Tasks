@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="shortcut icon" href="./Assets/images/lord-shiva-face-silhouette-vector-51643707.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="mainLogin">
+      <form action="#">
+        <div class="inputField">
+          <label for="email">Enter Username:</label><br />
+          <input type="text" name="mail" placeholder="email" required />
+        </div>
+
+        <div class="inputField">
+          <label for="password">Enter Password:</label><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+        </div>
+
+        <div class="showPassword">
+          <input type="checkbox" id="checkbox" onclick="showPassword()" />
+          <p id="getPassword">Show Password</p>
+        </div>
+
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+
+   <script src="script.js"></script>
+
+<div style="margin-bottom: 10px;">
+       
+        <button onclick="document.getElementById('bgMusic').play()" style="background-color: rgba(255, 255, 255, 0.15);">
+      Play Music
+    </button>
+    <button onclick="document.getElementById('bgMusic').pause()" style="background-color: rgba(255, 255, 255, 0.15);">
+      Pause Music
+    </button>
+    <audio id="bgMusic" loop>
+      <source src="./Assets/Audios/lord-shiva-ringtonetere-naam-ki-jyot-ne-ringtone-bhakti-ringtone516276605.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", serif;
+    width: 100%;
+    min-height: 100vh;
+    background: url(./Assets/images/629028-shivaadiyogi-wallpaper-hd-free-download-for-mobile-and-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .mainLogin {
+    width: 400px;
+    padding: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    display: grid;
+    color: white;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputField {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+  }
+  .inputField input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+  }
+  .inputField label {
+    font-size: 25px;
+    text-align: center;
+  }
+  .showPassword {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 25px 0 35px 0;
+    color: white;
+  }
+  .showPassword p {
+    margin-left: 8px;
+  }
+  button {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #fff;
+    color: #fff;
+  }
