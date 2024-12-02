@@ -1,0 +1,95 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+}
+
+.calculator{
+}
+
+/* Calculator container */
+.main {
+    background-color: #5b9aa0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #292F33;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Calculator form */
+.calci {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Input field */
+#ip1 {
+    grid-column: span 4;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    background-color: #e4e1e1;
+    color: #282c34;
+}
+
+/* Button styling */
+.calci input[type="button"], .calci input[type="submit"] {
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e0876a;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.calci input[type="button"]:hover, .calci input[type="submit"]:hover {
+    background-color: #f4a688;
+    color: #fff;
+}
+
+/* AC and Del buttons */
+.calci input[value="AC"], .calci input[value="Del"] {
+    background-color: #82b74b;
+}
+
+.calci input[value="AC"]:hover, .calci input[value="Del"]:hover {
+    background-color: #3e4444;
+    color: #fff;
+}
+
+/* Equal button styling */
+.calci input[type="submit"] {
+    background-color: #ffcc5c;
+    color: #282c34;
+    grid-column: span 2;
+}
+
+.calci input[type="submit"]:hover {
+    background-color: #ff6f69
+}
