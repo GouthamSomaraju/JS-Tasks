@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>Calculator</h1>
+      <form onsubmit="evaluation(event)" class="calci" id="form1">
+        <input type="text" placeholder="0" id="ip1" />
+        <input type="button" value="AC" onclick="Clear(event)" />
+        <input type="button" value="Del" onclick="del(event)" />
+        <input type="button" value="%" onclick="input(event)" />
+        <input type="button" value="/" onclick="input(event)" />
+
+        <input type="button" value="7" onclick="input(event)" />
+        <input type="button" value="8" onclick="input(event)" />
+        <input type="button" value="9" onclick="input(event)" />
+        <input type="button" value="*" onclick="input(event)" />
+
+        <input type="button" value="4" onclick="input(event)" />
+        <input type="button" value="5" onclick="input(event)" />
+        <input type="button" value="6" onclick="input(event)" />
+        <input type="button" value="-" onclick="input(event)" />
+
+        <input type="button" value="1" onclick="input(event)" />
+        <input type="button" value="2" onclick="input(event)" />
+        <input type="button" value="3" onclick="input(event)" />
+        <input type="button" value="+" onclick="input(event)" />
+
+        <input type="button" value="00" onclick="input(event)" />
+        <input type="button" value="0" onclick="input(event)" />
+        <input type="submit" value="=" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
