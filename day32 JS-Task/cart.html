@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        #parent {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #parent > div {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #parent > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #parent img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        #parent div > div {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        #parent div > div:last-child {
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent"></div>
+
+    <script>
+       let data=JSON.parse(localStorage.getItem("productDetails"))
+
+       parent=document.getElementById("parent")
+
+        emp=[]
+        let newdata=data.map((val)=>{
+            
+            child=document.createElement("div")
+            childa=document.createElement("div")
+            childb=document.createElement("div")
+            childc=document.createElement("div")
+            childd=document.createElement("div")
+            img=document.createElement("img")
+            // btn=document.createElement("button")
+
+
+            childa.innerText=val.id
+            childb.innerText=val.title
+            childc.innerText=val.category
+            childd.innerText=val.price
+            img.src=val.image
+            // btn.innerText="add to cart"
+            
+            parent.append(child)
+            child.append(img,childa,childb,childc,childd)
+            
+        })
+
+    </script>
+</body>
+</html>
