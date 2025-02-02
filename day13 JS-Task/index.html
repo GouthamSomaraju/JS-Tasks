@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .code-snippet {
+            display: block;
+            background-color: #2E3B4E;
+            color: #F5F5F5;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            border-radius: 8px;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+            white-space: pre-wrap; /* Ensure code wraps properly */
+            word-wrap: break-word; /* Prevent horizontal overflow */
+            overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Open Console To Check the Output</h1>
+        <h2>var aos = ["mom", "js", "malayalam", "html", "css", "dad"];</h2>
+        <h2>op=["mom", "dad", "malayalam"]</h2>
+        <h2>Using for/while and do-while loop</h2>
+        <pre class="code-snippet">
+            // Answer code for looping through the array
+            var aos = ["mom", "js", "malayalam", "html", "css", "dad"];
+            var op = [];
+            
+            // Using a for loop
+            for (i = 0; i < aos.length; i++) {
+                if (aos[i]==aos[i].split('').reverse().join('')) {
+                    op.push(aos[i]);
+
+                }
+            }
+            console.log(op); // Output: ["mom", "malayalam", "dad"]
+            
+            
+            // Using a do-while loop
+            var aos1 = ["mom", "js", "malayalam", "html", "css", "dad"];
+            var i = 0;
+            var palindromes = [];
+            do {
+                var str = aos1[i];
+                if (str===str.split('').reverse().join('')) {
+                    palindromes.push(str);
+                }
+                i++;
+            } while (i < aos1.length);
+            console.log(palindromes); // Output: ["mom", "malayalam", "dad"]
+        </pre>
+    </div>
+
+    <script src="day13 Task.js"></script>
+</body>
+</html>
